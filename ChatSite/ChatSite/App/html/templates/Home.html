@@ -1,0 +1,43 @@
+﻿<div layout="row">
+    <div class="width150" style="margin-top:5px">
+        <h3>Users</h3>
+        <div ng-if="username != ''">
+            <div ng-repeat="user in users">
+                {{user.Username}}
+            </div>
+        </div>
+    </div>
+    <md-content md-whiteframe="3" flex style="margin-top:3px;padding:5px;">
+        <div layout="row">
+            <h2 flex style="margin-bottom:0">
+                {{username}}
+            </h2>
+            <!--<md-switch style="margin-bottom:0" class="width150" ng-model="playAlert" aria-label="Switch 1">
+                Alert
+            </md-switch>-->
+            
+        </div>
+        <hr />
+        <md-content style="height:500px" id="messageBoard">
+            <md-content>
+                <div ng-if="username != '' ">
+                    <div ng-repeat="message in messageBoard">
+                        <strong>{{message.Sender}}</strong>: {{message.Content}}
+                    </div>
+                </div>
+            </md-content>
+        </md-content>
+
+
+        <form layout="row" style="margin-top:20px">
+            <md-input-container flex style="margin:0">
+                <label>Enter message</label>
+                <input ng-model="message" autocomplete="off">
+            </md-input-container>
+
+            <md-button ng-click="sendMessage()" type="submit" class="md-raised md-primary width150">
+                Send
+            </md-button>
+        </form>
+    </md-content>
+</div>

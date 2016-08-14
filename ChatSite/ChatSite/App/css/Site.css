@@ -1,0 +1,37 @@
+﻿body {
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.md-button{
+    margin-top:0;
+
+    height:36px
+}
+
+.clickable {
+    cursor: pointer;
+}
+.width50{
+    width:50px
+}
+.width100{
+    width:100px
+}
+.width150{
+    width:150px
+}
+.width200{
+    width:200px
+}
+.width225{
+    width:225px
+}
+.width250{
+    width:250px
+}

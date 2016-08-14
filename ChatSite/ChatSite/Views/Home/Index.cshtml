@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="App">
+<head>
+    <title>Some Chat App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/" />
+
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+
+    <link href="App/css/Site.css" rel="stylesheet" />
+</head>
+<body>
+    <md-toolbar>
+        <div ng-controller="headerController" ng-cloak class="md-toolbar-tools">
+                <div layout="colunm">
+
+
+                    <h1 style="font-size: xx-large"
+                        class="md-toolbar-tools clickable">
+                        Some Chat App
+                    </h1>
+                </div>
+            </div>
+            <div flex></div>
+        </div>
+    </md-toolbar>
+    <div layout="row">
+        <div flex="10">
+
+        </div>
+        <div flex layout="column" ng-cloak ng-view></div>
+        <div flex="20">
+
+        </div>
+    </div>
+    <div>
+        <footer>
+            <hr />
+            &copy; Fabian Wiles - 2016
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-route.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.7.0/angular-material-icons.min.js"></script> 
+    <script src="~/App/js/main.js"></script>
+    <script src="~/App/js/controllers/headerController.js"></script>
+    <script src="~/App/js/controllers/homeController.js"></script>
+
+    <script src="http://ajax.aspnetcdn.com/ajax/signalr/jquery.signalr-2.2.0.min.js"></script>
+    <script src="signalr/hubs" type="text/javascript"></script>
+
+</body>
+</html>

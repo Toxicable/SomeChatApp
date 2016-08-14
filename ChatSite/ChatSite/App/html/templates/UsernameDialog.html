@@ -1,0 +1,17 @@
+﻿<md-dialog style="height:200px;width:300px;padding:10px">
+    <form>
+        <md-dialog-content>
+            <md-input-container class="width250" style="margin-top:10px">
+                <label>Enter Username</label>
+                <input ng-model="enteredUsername" autocomplete="off" >
+                <div ng-if="takenUsername">
+                    Sorry <strong>{{errourusName}}</strong> has alreayd been taken
+                </div>
+        </md-dialog-content>
+        <md-dialog-actions>
+            <md-button type="submit" ng-click="closeDialog()" class="md-primary">
+                Set Username
+            </md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>
